@@ -315,7 +315,7 @@
           </div>
           <div class="contact-right">
             
-            <form name="submit-to-google-sheet">
+            <form onsubmit="sendEmail(); reset(); return false;">
               <input type="text" name="Name" placeholder="Your Name" required />
               <input
                 type="email"
@@ -339,22 +339,21 @@
         <p>Copyright © Nileet Savale</p>
       </div>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxVyXKcIo0jInC0BESBo-vZxmE1p0-yQUdZpM73n0KYChD5LcLgGbJ4Kj5cKC-fjwgH/exec'
-      const form = document.forms['submit-to-google-sheet']
-      const msg = document.getElementsByClassName("msg")
-      form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message Sent Successfully"
-        setTimeout(function(){
-          msg.innerHTML = ""
-        },5000)
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-        })
+      function sendEmail(){
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "nileet",
+    Password : "Aissmsioit",
+    To : 'nileet.savale@aissmsioit.org',
+    From : document.getElementByClassName("email").value,
+    Subject : "Message By" document.getElementByClassName("name").value,
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+      }
     </script>
     <script src="script.js"></script>
   
