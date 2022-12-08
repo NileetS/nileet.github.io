@@ -66,6 +66,9 @@ nav {
   user-select: none;
   /* Standard syntax */
 }
+nav ul{
+ margin-right:0;
+}
 
 nav ul li {
   display: inline-block;
