@@ -42,6 +42,7 @@ nav {
   /* background-color: black; */
   background-color: #231f20;
   width: 100%;
+
   /* flex-grow: 1; */
   /* width: 100vw; */
   /* Standard syntax */
@@ -50,8 +51,11 @@ nav {
 .navbar{
   display: flex;
   flex: 1;
+  
 }
-
+nav ul{
+  margin-right: 30px;
+}
 .logo {
   width: 80px;
   height: 50px;
@@ -69,7 +73,8 @@ nav {
 nav ul li {
   display: inline-block;
   list-style: none;
-  margin: 10px 20px;
+  margin: 20px 20px;
+
 }
 
 nav ul li a {
@@ -743,3 +748,20 @@ nav .fa-solid{
   }
 }
 
+::-webkit-scrollbar{
+  width: 1em;
+  height: 0px;
+}
+::-webkit-scrollbar-track{
+  background: hsl(227, 66%, 22%);
+  border-radius: 8px;
+  margin-block: 300px;
+}
+::-webkit-scrollbar-thumb{
+  background: hsl(227, 66%, 52%);
+  border-radius: 8px;
+  border:3px solid hsl(227, 66%, 22%);
+}
+::-webkit-scrollbar-thumb:hover{
+  background: hsl(227, 100%, 60%);
+}
