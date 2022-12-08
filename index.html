@@ -340,22 +340,22 @@
       </div>
     </div>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
     <script>
       function sendEmail(){
-        Email.send({
-    Host : "smtp.gmail.com",
-    Username : "nileet",
-    Password : "Aissmsioit",
-    To : 'nileet.savale@aissmsioit.org',
-    From : document.getElementByClassName("email").value,
-    Subject : "Message By" document.getElementByClassName("name").value,
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
+        email.send({
+          secureToken:"53f37502-0a0e-4bd6-962c-a13e274be041", 
+          To : 'nileetsavale@gmail.com',
+          From : document.getElementByClassName("email").value,
+          Subject :"Message By" + document.getElementsByid("name").value,
+          Body : "Name" + document.getElementsByid("name").value
+                  +"Email" + document.getElementsByid("email").value
+                  +"Message" + document.getElementsByid("message").value
+          }).then(
+message => alert(message)
 );
-      }
+}
     </script>
-    <script src="script.js"></script>
   
   </body>
 </html>
