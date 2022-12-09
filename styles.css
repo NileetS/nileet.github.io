@@ -765,3 +765,56 @@ nav .fa-solid{
 ::-webkit-scrollbar-thumb:hover{
   background: hsl(227, 100%, 60%);
 }
+.container_error img{
+  width: auto;
+  height: 90vh;
+  overflow: hidden;
+
+}
+.container_error{
+  margin-left: 13%;
+  align-items: center;
+  justify-content: center;
+  display: block;
+}
+.home i{
+  font-size: 40px;
+
+}
+.home{
+  padding: 14px 20px;
+  display: inline-block;
+  border-radius:6px;
+  font-weight: 700;
+  align-items: center;
+  font-size: 16px;
+  border: none;
+  background: #3457d5;
+  cursor: pointer;
+  margin-left: 35%;
+  margin-top: -10%;
+  width: 300px;
+  transition-duration: 1s;
+
+}
+
+
+.home:hover{
+  background: #446dff;
+  color: #fff;
+  background-image: url(components/images/arrow.png);
+  background: origin y 0px;
+  background-size: 30px;
+  background-repeat:no-repeat;
+  background-position: 30% 60%;
+  box-shadow: 0 12px 16px 0 rgb(1, 1, 1 / 24%), 0 17px 50px 0 rgb(1, 1, 1 / 19%);
+}
+
+.home a{
+  text-decoration: none;
+  color: #080808;
+  transition: 0.2s;
+}
+.home a:hover{
+  color: #fff;
+}
