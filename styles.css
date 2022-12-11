@@ -812,7 +812,6 @@ nav .fa-solid{
 .btn_pos{
   margin-top: 620px;
   margin-left: 900px;
-  margin-bottom:20px;
 }
 .area{
 
@@ -993,4 +992,9 @@ nav .fa-solid{
   100%{
     transform: translateX(-200%);
   }
+}
+.social_try{
+  width: 100%;
+  height: 40px;
+  margin-bottom: -10px;
 }
