@@ -14,7 +14,7 @@ body {
 .header {
   width: 100%;
   height: 100vh;
-  background-image: url(components/images/try5.png);
+  background-image: url(components/images/Untitled\ design\ \(2\).png);
   background-size: cover;
   background-position: center;
 }
@@ -40,7 +40,7 @@ nav {
   top: 0;
   z-index: 2;
   /* background-color: black; */
-  background-color: #231f20;
+  background-color: rgba(8, 8, 8,1);
   width: 100%;
 
   /* flex-grow: 1; */
@@ -649,7 +649,7 @@ nav .fa-solid{
 }
 @media screen and (max-width: 600px) {
   .header{
-    background-image: url(components/images/phone-background.png);
+    background-image: url(components/images/Untitled\ \(1080\ ×\ 1920\ px\)\ \(2\).png);
   }
   .h1_pre{
     display: none;
@@ -671,7 +671,7 @@ nav .fa-solid{
     cursor: pointer;
   }
   .header-text{
-    margin-top: 50%;
+    margin-top: 40%;
     font-size: 16px;
   }
   .h1_hide{
