@@ -1002,3 +1002,9 @@ nav .fa-solid{
 .btn3{
   margin-top: 190px;
 }
+.fa-solid.fa-guitar{
+  color: white;
+  display: block;
+  font-size: 25px;
+  padding-right: 10px;
+}
